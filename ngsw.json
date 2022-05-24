@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1653371982184,
+  "timestamp": 1653373608171,
   "index": "virtus/index.html",
   "assetGroups": [
     {
@@ -27,7 +27,7 @@
         "virtus/favicon.ico",
         "virtus/firebase-messaging-sw.js",
         "virtus/index.html",
-        "virtus/main.3a5d51da19309ede.js",
+        "virtus/main.d25339b8e66cd1b4.js",
         "virtus/manifest.webmanifest",
         "virtus/polyfills.1f27e2d59ac44f99.js",
         "virtus/runtime.53996ddfd24a56d4.js",
@@ -331,9 +331,9 @@
     "virtus/assets/scss/typography/_typography.scss": "bdc0d29fbfb53100adafc09ba287bbb09648b096",
     "virtus/common.78c46f4421225935.js": "d99d41c5c364c4531e08db44ab9e6f28e1a28186",
     "virtus/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "virtus/firebase-messaging-sw.js": "c0190f5cec71f35f95cc25d6cd8fde60c08f4fb9",
-    "virtus/index.html": "8f6377bcfd843707023366ae430d77870507f795",
-    "virtus/main.3a5d51da19309ede.js": "444e007cb89306145259261c5d9efe3274a283cf",
+    "virtus/firebase-messaging-sw.js": "cae5388e9a06dacaa38001ea31b79c0cd0844f3b",
+    "virtus/index.html": "c9cdecf1b6c88ac550b488e27c212ab96377fedc",
+    "virtus/main.d25339b8e66cd1b4.js": "cd93e5210ab356ae3a08826339f7357fe54fa001",
     "virtus/manifest.webmanifest": "c011e23ffd5871d35d6a8f924491dc085ed4d455",
     "virtus/materialdesignicons-webfont.21f691f0c66fe18d.ttf": "9e47ec85012dc304ad412ffa78c54c196ff156a1",
     "virtus/materialdesignicons-webfont.54b0f60dbe53b0de.woff2": "5bc948afffe6633639154e024bf047cf3ef81326",
