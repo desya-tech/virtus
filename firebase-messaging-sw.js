@@ -11,11 +11,27 @@ firebase.initializeApp({
 });
 const messaging = firebase.messaging();
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('../firebase-messaging-sw.js')
-    .then(function(registration) {
-      console.log('Registration successful, scope is:', registration.scope);
-    }).catch(function(err) {
-      console.log('Service worker registration failed, error:', err);
-    });
-  }
+getToken(messaging, {
+  vapidKey:
+    "BOB_q5FWongjJ8hSskOsmhlrSRwABrfqv5IC8ZZH3HMoa1xv6yGZhLJtf_J2VlLmaI9O41txvGJs8F-IuMNZmOo",
+})
+  .then((currentToken) => {
+    if (currentToken) {
+      console.log("Firebase Token", currentToken);
+    } else {
+      // Show permission request UI
+      console.log(
+        "No registration token available. Request permission to generate one."
+      );
+      // ...
+    }
+  })
+  .catch((err) => {
+    console.log("An error occurred while retrieving token. ", err);
+    // ...
+  });
+
+onMessage(messaging, (payload) => {
+  console.log("Message received. ", payload);
+  // ...
+});
