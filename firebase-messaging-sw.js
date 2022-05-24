@@ -10,28 +10,3 @@ firebase.initializeApp({
  measurementId: "G-WBRTH7MNL6"
 });
 const messaging = firebase.messaging();
-
-getToken(messaging, {
-  vapidKey:
-    "BOB_q5FWongjJ8hSskOsmhlrSRwABrfqv5IC8ZZH3HMoa1xv6yGZhLJtf_J2VlLmaI9O41txvGJs8F-IuMNZmOo",
-})
-  .then((currentToken) => {
-    if (currentToken) {
-      console.log("Firebase Token", currentToken);
-    } else {
-      // Show permission request UI
-      console.log(
-        "No registration token available. Request permission to generate one."
-      );
-      // ...
-    }
-  })
-  .catch((err) => {
-    console.log("An error occurred while retrieving token. ", err);
-    // ...
-  });
-
-onMessage(messaging, (payload) => {
-  console.log("Message received. ", payload);
-  // ...
-});
